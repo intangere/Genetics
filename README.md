@@ -1,5 +1,5 @@
 # Genetics
-Simple extensible Genetic Algorithim Library written in Python
+Simple extensible Genetic Algorithm Library written in Python
 
 Usage:
 ```
