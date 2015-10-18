@@ -1,7 +1,6 @@
 ###########################################
-#           Genetic Algorithim to         #
-#   Find values that add up to a number   #
-#                By Phc                   #
+#           Genetic Algorithim lib        #
+#                   By Phc                #
 ###########################################
 from random import random, randint
 from operator import add
