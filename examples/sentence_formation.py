@@ -9,7 +9,7 @@ from operator import add
 
 class Genetics_(Genetics): #We have to subclass Genetics and extend it
 
-	def fitness(self, individual): #Override out fitness function
+	def fitness(self, individual): #Override our fitness function
 		individual.fitness = 0
 		for x, y in zip(individual.chromosomes, target):
 			if x == y:
@@ -27,7 +27,7 @@ abcs = {x : i for i, x in enumerate(symbols)}
 idxs = {i : x for i, x in enumerate(symbols)}
 target = [abcs[x] for x in target_text]
 World = Genetics_(target) #Define a world where the goal is to have numbers = 100
-World.population(40, len(target), 0, idxs.keys()[-1]) #10 individuals, chromosomes match length of target, min = 0, max = target value
+World.population(40, len(target), 0, idxs.keys()[-1]) #40 individuals, chromosomes match length of target, min = 0, max = target value
 fitness_history = [World.grade()]
 for i in xrange(200000): #Loop 200000 times
 	World.evolve() #Evolve the population
