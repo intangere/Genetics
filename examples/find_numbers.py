@@ -1,13 +1,13 @@
 ###########################################
 #           Genetic Algorithim to         #
 #   Find values that add up to a number   #
-#                By Phc                   #
+#              By Intangere               #
 ###########################################
 from genetics import Genetics, Individual
 
 World = Genetics(100) #Define a world where the goal is to have numbers = 100
 World.population(30, 6, 0, World.target) #10 individuals, 5, chromosomes each, min = 0, max = target value
-fitness_history = [World.grade()]
+fitness_history = [World.grade()] #Only needed to view fitness history
 solutions = []
 for x in xrange(200): #Loop 100 times
 	World.evolve() #Evole the population

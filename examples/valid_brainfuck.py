@@ -1,8 +1,8 @@
 ###########################################
 #          Genetic Algorithim to_         #
-#          Spell out any sentence         #
+#Maximize printable brainfuck ascii output#
 #              using evolution            #
-#                 By Phc                  #
+#                By Intangere             #
 ###########################################
 from genetics import Genetics, Individual
 from operator import add
